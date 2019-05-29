@@ -12,5 +12,6 @@ public:
 	Image(string name, string size, string extension, string genre, string contr, int W, int H);
 	void setResolution(int Height, int Width);
 	string GetResolution();
+	Image* Clone();
 };
 

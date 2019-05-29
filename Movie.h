@@ -11,5 +11,6 @@ public:
 	Movie(string name, string size, string extension, string genre, string contr, int Duration);
 	string getDuration();
 	void setDuration(int dur);
+	Movie* Clone();
 };
 

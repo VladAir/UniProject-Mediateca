@@ -29,3 +29,9 @@ string Music::getDuration() {
 void Music::setDuration(int dur) {
 	this->Duration = dur;
 }
+
+Music* Music::Clone() {
+
+	Music* NewObject = new Music(this->Name, this->Size, this->Extension, this->Genre, this->Contribuitors, this->Duration);
+	return NewObject;
+}

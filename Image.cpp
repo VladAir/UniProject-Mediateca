@@ -32,3 +32,11 @@ string Image::GetResolution() {
 	string aux = to_string(this->Resolution_Height) + "x" + to_string(this->Resolution_Width);
 	return aux;
 }
+
+Image* Image::Clone() {
+
+	Image* NewObject = new Image(this->Name, this->Size, this->Extension, this->Genre,
+								 this->Contribuitors,
+								 this->Resolution_Width,this->Resolution_Height);
+	return NewObject;
+}

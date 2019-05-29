@@ -27,3 +27,10 @@ string Movie::getDuration() {
 void Movie::setDuration(int dur) {
 	this->Duration = dur;
 }
+
+Movie* Movie::Clone() {
+	
+	Movie *NewObject = new Movie(this->Name,this->Size,this->Extension,this->Genre,
+								 this->Contribuitors,this->Duration);
+	return NewObject;
+}
