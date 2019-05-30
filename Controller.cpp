@@ -1,12 +1,13 @@
-#include "Controller.hpp"
+#include "Controller.h"
+#include "Repository.h"
 #include <iostream>
 #include <string>
 
 using namespace std;
 
-Controller::Controller(Repo r) :repo{ r }
-{
-    
-}
+//Controller::Controller(Repository r) //:repo{ r }
+//{
+//	Repository repo ;
+//}
 
 

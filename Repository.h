@@ -40,21 +40,21 @@
 //{
 //}
 
-class Media { 
-public:
-	Media* clone() {
-		
-			return nullptr;
-		
-	};
-};
+//class Media { 
+//public:
+//	Media* clone() {
+//		
+//			return nullptr;
+//		
+//	};
+//};
 
 //--------------------------------------------- ** ----------------------------------------
 
 #ifndef REPOSITORY_H
 #define REPOSITORY_H
 
-//#include "Media.h"
+#include "Media.h"
 
 class Repository {
 private:

@@ -33,6 +33,14 @@ void Media::setContribuitors(string Contribuitors) {
 	this->Contribuitors = Contribuitors;
 }
 
+Media * Media::clone()
+{
+	Media *NewObject = new Media(this->Name, this->Size, this->Extension, this->Genre,
+		this->Contribuitors);
+	return NewObject;
+}
+
+
 
 string Media::getName() {
 	return this->Name;

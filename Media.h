@@ -26,5 +26,6 @@ public:
 	void setExtension(string Extension);
 	void setGenre(string Genre);
 	void setContribuitors(string Contribuitors);
+	Media *clone();
 };
 

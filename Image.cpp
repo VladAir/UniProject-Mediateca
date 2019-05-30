@@ -1,7 +1,5 @@
 #include "Image.h"
 
-
-
 Image::Image()
 {
 	Resolution_Height = 0;

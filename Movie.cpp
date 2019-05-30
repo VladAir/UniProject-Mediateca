@@ -21,7 +21,7 @@ Movie::Movie(string name, string size, string extension, string genre, string co
 string Movie::getDuration() {
 	string aux = to_string(this->Duration / 60) + " ore";
 	if (this->Duration / 60 == 1) { aux = "o ora"; }
-	return "Filmul " + this->Name + " dureaza " + aux + " si " + to_string(this->Duration - this->Duration/60*60) + " minute" ;
+	return "Filmul " + this->Name + " dureaza " + aux + " si " + to_string(this->Duration - this->Duration/60*60) + " minute." ;
 }
 
 void Movie::setDuration(int dur) {
